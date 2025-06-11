@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { CgProfile } from "react-icons/cg";
 
 import "./globals.css";
+import Image from "next/image";
+import { TbWorld } from "react-icons/tb";
+import { CiCircleQuestion } from "react-icons/ci";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +32,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {" "}
-        <nav className="w-full flex justify-between fixed bg-white p-5">
-          <h1>TESLA</h1>
-          <div>catagories</div>
-          <div>profile</div>
+        <nav className="w-full flex justify-between fixed  p-5">
+          <div className="flex justify-center items-center -mt-2 ml-5">
+            <Image src="/image.png" width={150} height={150} alt="" />
+          </div>
+
+          <li className="-ml-10 font-semibold text-[14px] flex flex-row gap-8 ">
+            <ul>Vechicles</ul>
+            <ul>Engine</ul>
+            <ul>Charging</ul>
+            <ul>Discover</ul>
+            <ul>Shop</ul>
+          </li>
+
+          <li className="mr-8 flex flex-row gap-3">
+            <CiCircleQuestion className="text-[25px]"/>
+            <TbWorld className="text-[25px]"/>
+            <CgProfile className="text-[25px]" />
+          </li>
         </nav>
         <main className="pt-15"> {children}</main>
       </body>
