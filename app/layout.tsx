@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="w-full flex justify-between fixed  p-5">
+        <nav className="w-full flex justify-between top-0 right-0 left-0 z-50 bg-white fixed p-5">
           <div className="flex justify-center items-center -mt-2 ml-5">
             <Image src="/image.png" width={150} height={150} alt="" />
           </div>
