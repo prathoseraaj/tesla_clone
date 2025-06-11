@@ -32,9 +32,8 @@ const Page = () => {
               <h1 className="text-6xl mt-12 font-bold">Model 3</h1>
               <p className="underline text-[20px]">0% APR Available</p>
               <div className="flex flex-row gap-5 mt-5">
-            Categories
-Categories
-Categories    <button className="bg-blue-600 hover:bg-blue-800 transition duration-500 rounded font-semibold text-[15px] py-[8px] w-[200px] ">
+                Categories Categories Categories{" "}
+                <button className="bg-blue-600 hover:bg-blue-800 transition duration-500 rounded font-semibold text-[15px] py-[8px] w-[200px] ">
                   Order Now
                 </button>
                 <button className="bg-white hover:bg-gray-300 transition duration-500 text-black font-semibold rounded py-[8px] w-[200px] ">
@@ -57,7 +56,9 @@ Categories    <button className="bg-blue-600 hover:bg-blue-800 transition durati
           <IoIosArrowForward />
         </div>
       </div>
-      <Models/>
+      <div className="mr-10 ml-10">
+        <Models />
+      </div>
     </div>
   );
 };
