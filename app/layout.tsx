@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,12 +29,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {" "}
-        <nav className="w-full flex justify-between fixed p-5">
+        <nav className="w-full flex justify-between fixed bg-white p-5">
           <h1>TESLA</h1>
           <div>catagories</div>
           <div>profile</div>
         </nav>
-        {children}
+        <main className="pt-15"> {children}</main>
       </body>
     </html>
   );
