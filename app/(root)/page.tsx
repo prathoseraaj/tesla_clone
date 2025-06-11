@@ -45,7 +45,7 @@ const Page = () => {
         onClick={() => setModely(!modely)}
       >
         <IoIosArrowBack />
-      </div>
+      </div> 
       <div
         className="bg-gray-100 opacity-75 p-3 rounded absolute right-5 top-1/2 transform -translate-y-1/2 "
         onClick={() => setModely(!modely)}
