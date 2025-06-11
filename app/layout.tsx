@@ -27,6 +27,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {" "}
+        <nav className="w-full flex justify-between fixed p-5">
+          <h1>TESLA</h1>
+          <div>catagories</div>
+          <div>profile</div>
+        </nav>
         {children}
       </body>
     </html>
