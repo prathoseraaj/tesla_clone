@@ -7,7 +7,7 @@
 A visually rich Tesla-inspired landing page built with Next.js 15 with typescript and Tailwind CSS 4.  
 This project demonstrates modern React patterns and responsive layouts with custom horizontal card carousels, So it not a perfect clone visit the website.
 
-"Did I use GPT for making full prject? Nope, Just vibe coded but still some guys using to making proper UI, LOL!"
+"Did I use GPT for making full project? Nope, Just vibe coded but still some guys using to making proper UI, LOL!"
 
 
 
