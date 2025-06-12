@@ -34,7 +34,7 @@ const Product = () => {
   return (
     <div className=" overflow-auto w-full py-8 scrollbar-hide">
       <div className="flex flex-nowrap items-center gap-10 py-4 px-2 ">
-        {products.map((product, index) => {
+        {products.map((product) => {
           return (
             <div
             key={product.id}

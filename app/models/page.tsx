@@ -47,7 +47,7 @@ const Models = () => {
   return (
     <div className="overflow-x-auto w-full py-8 scrollbar-hide">
       <div className="flex flex-nowrap items-center gap-10 px-4  py-2">
-        {models.map((model, index) => {
+        {models.map((model) => {
           return (
             <div
               key={model.id}
