@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Models from "../models/page";
 import Details from "../details/page";
+import Product from "../products/page";
 
 const Page = () => {
   const [modely, setModely] = useState(true);
@@ -60,8 +61,11 @@ const Page = () => {
       <div className="mr-10 ml-10">
         <Models />
       </div>
-            <div>
-        <Details  />
+      <div>
+        <Details />
+      </div>
+      <div>
+        <Product/>
       </div>
     </div>
   );
