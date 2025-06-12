@@ -49,7 +49,7 @@ const Models = () => {
       <div className="flex flex-nowrap items-center gap-10 px-4 py-2">
         {models.map((model, index) => {
           return (
-            <div>
+
               <div
                 key={model.id}
                 className=" min-w-[60rem] relative rounded-lg h-[70vh] bg-cover bg-center"
@@ -73,7 +73,7 @@ const Models = () => {
                   </div>
                 </div>
               </div>
-            </div>
+
           );
         })}
       </div>
