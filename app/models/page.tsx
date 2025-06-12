@@ -51,7 +51,7 @@ const Models = () => {
           return (
             <div
               key={model.id}
-              className=" min-w-[65rem] relative rounded-lg h-[70vh] bg-cover bg-center"
+              className=" min-w-[63rem] relative rounded-lg h-[70vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${model.image})` }}
             >
               <h1 className="m-10 text-white font-semibold">

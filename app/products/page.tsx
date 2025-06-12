@@ -33,19 +33,30 @@ const Product = () => {
   ];
   return (
     <div className=" overflow-auto w-full py-8">
-        <div className="flex flex-nowrap items-center gap-10 py-4 px-2 ">
-            {
-                products.map((product,index)=>{
-                    return(
-                        <div className="min-w-[65rem]  rounded h-[70vh] relative bg-cover bg-center" style={{ backgroundImage: `url(${product.image})` }}>
-                            <div>suii</div>
-                        </div>
-                    )
-                })
-            }
-
-        </div>
-      
+      <div className="flex flex-nowrap items-center gap-10 py-4 px-2 ">
+        {products.map((product, index) => {
+          return (
+            <div
+            key={product.id}
+              className="min-w-[63rem]  rounded h-[70vh] relative bg-cover bg-center"
+              style={{ backgroundImage: `url(${product.image})` }}
+            >
+              <div className="mt-10 mr-10 ml-10 absolute bottom-6">
+                <h1 className="text-[45px] text-white font-semibold">
+                  {product.name}
+                </h1>
+                <p className="text-[19px] text-white font-medium">
+                  {product.description}
+                </p>
+                <div className="flex flex-row gap-10 mt-5">
+                  <button className="bg-blue-600 font-semibold text-[14px] text-white rounded w-[160px] py-[8px]">Order Now</button>
+                  <button className="bg-white font-semibold text-[14px] rounded w-[160px] py-[8px]">Learn More</button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
