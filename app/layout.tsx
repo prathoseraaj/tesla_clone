@@ -46,12 +46,23 @@ export default function RootLayout({
           </li>
 
           <li className="mr-8 flex flex-row gap-3">
-            <CiCircleQuestion className="text-[25px]"/>
-            <TbWorld className="text-[25px]"/>
+            <CiCircleQuestion className="text-[25px]" />
+            <TbWorld className="text-[25px]" />
             <CgProfile className="text-[25px]" />
           </li>
         </nav>
         <main className="pt-15"> {children}</main>
+        <footer className="flex justify-center items-center w-full mt-60 mb-20">
+          <li className="flex flex-row gap-5 text-[12px] font-semibold text-gray-500">
+            <ul>Tesla © 2025 Learn</ul>
+            <ul>Privacy & Legal</ul>
+            <ul>Vehicle Recalls</ul>
+            <ul>Contact</ul>
+            <ul>News</ul>
+            <ul>Get Updates</ul>
+            <ul>Locations</ul>
+          </li>
+        </footer>
       </body>
     </html>
   );
