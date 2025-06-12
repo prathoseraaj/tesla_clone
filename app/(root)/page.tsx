@@ -58,14 +58,14 @@ const Page = () => {
           <IoIosArrowForward />
         </div>
       </div>
-<div className="max-w-screen-xl mx-auto px-4">
-  <Models />
-</div>
+      <div className="ml-10 mr-10">
+        <Models />
+      </div>
       <div>
         <Details />
       </div>
-      <div className=""> 
-        <Product/>
+      <div className="ml-10 mr-10 ">
+        <Product />
       </div>
     </div>
   );
