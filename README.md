@@ -1,6 +1,6 @@
 # Tesla Clone
 
-A visually rich Tesla-inspired landing page built with [Next.js 15](https://nextjs.org/),  and [Tailwind CSS 4](https://tailwindcss.com/).  
+A visually rich Tesla-inspired landing page built with Next.js 15 with typescript,  and Tailwind CSS 4.  
 This project demonstrates modern React patterns and responsive layouts with custom horizontal card carousels, So it not a perfect clone visit the website.
 
 "Did I use GPT for making full prject? Nope, Just vibe coded but still some guys using to making proper UI, LOL!"
@@ -13,7 +13,6 @@ This project demonstrates modern React patterns and responsive layouts with cust
 - Horizontally scrollable sections for vehicle models and energy products, with hidden scrollbars
 - Animated navigation dots and navigation arrows
 - Responsive layouts and elegant design using Tailwind CSS
-- Uses [tailwind-scrollbar-hide](https://www.npmjs.com/package/tailwind-scrollbar-hide) to hide horizontal scrollbars
 - Modular, reusable component structure
 - Google Fonts (Geist) and React Icons for a polished look
 
@@ -46,48 +45,44 @@ This project demonstrates modern React patterns and responsive layouts with cust
 prathoseraaj-tesla_clone/
 │
 ├── app/
-│   ├── globals.css         # Tailwind and global styles (incl. scrollbar hiding)
-│   ├── layout.tsx          # Root layout with header/footer
-│   ├── (root)/page.tsx     # Main landing page
-│   ├── models/page.tsx     # Tesla car models section (horizontal scroll)
-│   ├── details/page.tsx    # Info and stats section
-│   └── products/page.tsx   # Tesla energy products (horizontal scroll)
+│   ├── globals.css         
+│   ├── layout.tsx          
+│   ├── (root)/page.tsx     
+│   ├── models/page.tsx     
+│   ├── details/page.tsx    
+│   └── products/page.tsx   
 │
-├── public/                 # Static assets (e.g. logo)
-├── next.config.ts          # Next.js config (incl. image domains)
-├── package.json            # Dependencies and scripts
-├── tailwind.config.js      # TailwindCSS config (see below)
+├── public/                 
+├── next.config.ts          
+├── package.json           
+├── tailwind.config.js     
 └── ...
 ```
-
----
 
 
 ### Next.js Images
 
 - External images from `digitalassets.tesla.com` are allowed (see `next.config.ts`).
 
----
+
 
 ## Dependencies
 
 - next ^15
-- react ^19
 - tailwindcss ^4
-- tailwind-scrollbar-hide
+- typescript
 - react-icons
 
----
 
 ## Attribution
 
 All Tesla images are property of Tesla, Inc., used here for demo/educational purposes.
 
----
+
 
 ## License
 
 This project is for learning and demo purposes.  
 Not affiliated with or endorsed by Tesla, Inc.
 
----
+
