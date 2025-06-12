@@ -46,12 +46,12 @@ const Models = () => {
 
   return (
     <div className="overflow-x-auto w-full py-8">
-      <div className="flex flex-nowrap items-center gap-10 px-4 py-2">
+      <div className="flex flex-nowrap items-center gap-10 px-4  py-2">
         {models.map((model, index) => {
           return (
             <div
               key={model.id}
-              className=" min-w-[60rem] relative rounded-lg h-[70vh] bg-cover bg-center"
+              className=" min-w-[65rem] relative rounded-lg h-[70vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${model.image})` }}
             >
               <h1 className="m-10 text-white font-semibold">

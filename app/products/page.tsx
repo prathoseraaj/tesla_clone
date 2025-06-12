@@ -1,7 +1,7 @@
 import React from "react";
 
 const Product = () => {
-  const product = [
+  const products = [
     {
       id: 1,
       name: "Solar Panels",
@@ -32,8 +32,20 @@ const Product = () => {
     },
   ];
   return (
-    <div className="m-10">
-      <div></div>
+    <div className=" overflow-auto w-full py-8">
+        <div className="flex flex-nowrap items-center gap-10 py-4 px-2 ">
+            {
+                products.map((product,index)=>{
+                    return(
+                        <div className="min-w-[65rem]  rounded h-[70vh] relative bg-cover bg-center" style={{ backgroundImage: `url(${product.image})` }}>
+                            <div>suii</div>
+                        </div>
+                    )
+                })
+            }
+
+        </div>
+      
     </div>
   );
 };
